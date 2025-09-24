@@ -10,12 +10,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'bash Scripts/build.sh' // Run the build
+                sh 'bash ~code/myrepo/Scripts/build.sh' // Run the build
             }
         }
         stage('Test') {
             steps {
-                sh 'bash Scripts/test.sh' // Run the test
+                sh 'bash ~code/myrepo/Scripts/test.sh' // Run the test
             }
         }
     }
